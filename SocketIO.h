@@ -64,6 +64,7 @@
 - (id) initWithDelegate:(id<SocketIODelegate>)delegate;
 - (void) connectToHost:(NSString *)host onPort:(NSInteger)port;
 - (void) disconnect;
+- (BOOL) isConnected;
 
 - (void) sendMessage:(NSString *)data;
 - (void) sendMessage:(NSString *)data withAcknowledge:(SEL)function;
